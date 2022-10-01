@@ -147,11 +147,11 @@
       popup = popup || open('', '_blank');
   
       if (popup) {
-        popup.document.title = popup.document.body.innerText = 'downloading...'
+        popup.document.title = popup.document.body.innerText = 'downloading...';
       }
   
       if (typeof blob === 'string') return download(blob, name, opts);
-      var force = blob.type === 'application/octet-stream'
+      var force = blob.type === 'application/octet-stream';
   
       var isSafari = /constructor/i.test(_global.HTMLElement) || _global.safari;
   
@@ -163,7 +163,7 @@
   
         reader.onloadend = function () {
           var url = reader.result;
-          url = isChromeIOS ? url : url.replace(/^data:[^;]*;/, 'data:attachment/file;')
+          url = isChromeIOS ? url : url.replace(/^data:[^;]*;/, 'data:attachment/file;');
           if (popup) popup.location.href = url;else location = url;
           popup = null; // reverse-tabnabbing #460
         };
@@ -176,7 +176,7 @@
         popup = null; // reverse-tabnabbing #460
   
         setTimeout(function () {
-          URL.revokeObjectURL(url)
+          URL.revokeObjectURL(url);
         }, 4E4); // 40s
       }
     });
