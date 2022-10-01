@@ -1,18 +1,4 @@
-:root {
-  --dark-color: #212121;
-}
-.logo_iu{
 
-  height: 3em;
- }
-
-
-
-.main-cont{
-
-  text-align:center;
-  
-}
 
 
 body {
@@ -22,28 +8,9 @@ body {
   font-size: 1.5em;
   height: 100vh;
 }
-
-h4 {
-  font-weight: normal;
-  margin-bottom: 5px;
-}
-h1 {
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 40px;
-  font-size: 2em;
-}
-.img1{
-  width: 500px;
-  height:200px;
-  
+dwa
 }
 
-.logo {
-  border-radius: 100%;
-  height: 200px;
-
-}
 
 main {
   display: flex;
